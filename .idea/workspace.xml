@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="82668759-5dc8-4180-9ea4-9150c26d73e6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/testing/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/testing/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/testing/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/testing/Initialize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/testing/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/10_of_clubs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/10_of_diamonds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/10_of_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/10_of_spades.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/2_of_clubs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/2_of_diamonds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/2_of_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/2_of_spades.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/3_of_clubs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/3_of_diamonds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/3_of_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/3_of_spades.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/4_of_clubs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/4_of_diamonds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/4_of_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/4_of_spades.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/5_of_clubs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/5_of_diamonds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/5_of_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/5_of_spades.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/6_of_clubs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/6_of_diamonds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/6_of_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/6_of_spades.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/7_of_clubs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/7_of_diamonds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/7_of_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/7_of_spades.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/8_of_clubs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/8_of_diamonds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/8_of_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/8_of_spades.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/9_of_clubs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/9_of_diamonds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/9_of_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/9_of_spades.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/ace_of_clubs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/ace_of_diamonds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/ace_of_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/ace_of_spades.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/jack_of_clubs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/jack_of_diamonds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/jack_of_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/jack_of_spades.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/king_of_clubs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/king_of_diamonds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/king_of_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/king_of_spades.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/queen_of_clubs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/queen_of_diamonds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/queen_of_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Decks/Standard/queen_of_spades.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/default.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/game.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/game.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Kow2XKKH2Qx6rNQ7n7lxcDP2oX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "S:/FH/Programieren/testing/src/main/resources/com/example/testing/Decks/Standard"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="S:\FH\Programieren\testing\src\main\resources\com\example\testing\Decks\Standard" />
+      <recent name="S:\FH\Programieren\testing\src\main\resources\com\example\testing" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.HelloApplication">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.testing.HelloApplication" />
+      <module name="testing.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Initialize" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.testing.Initialize" />
+      <module name="testing.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testing [jlink]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jlink" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Initialize" />
+        <item itemvalue="Gradle.testing [jlink]" />
+        <item itemvalue="Application.HelloApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82668759-5dc8-4180-9ea4-9150c26d73e6" name="Changes" comment="" />
+      <created>1674654036813</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674654036813</updated>
+      <workItem from="1674654038442" duration="3132000" />
+      <workItem from="1674765627327" duration="10973000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/testing/Initialize.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

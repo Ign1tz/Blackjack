@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="testPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" styleClass="testPane" stylesheets="@game.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testing.HelloController">
+   <children>
+      <ImageView fx:id="test" fitHeight="181.0" fitWidth="125.0" onDragDetected="#dragStart" onMouseDragReleased="#dragEnd" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
