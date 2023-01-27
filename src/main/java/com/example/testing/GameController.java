@@ -2,7 +2,6 @@ package com.example.testing;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
@@ -10,7 +9,7 @@ import java.net.URL;
 import java.util.Random;
 import java.util.ResourceBundle;
 
-public class HelloController implements Initializable {
+public class GameController implements Initializable {
     @FXML
     ImageView test;
     private double startDragX;
