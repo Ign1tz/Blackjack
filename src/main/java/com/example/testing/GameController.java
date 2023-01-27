@@ -14,7 +14,6 @@ public class GameController implements Initializable {
     ImageView test;
     private double startDragX;
     private double startDragY;
-    private boolean draging = false, starts = true;
 
     public void dragStart() {
     }
