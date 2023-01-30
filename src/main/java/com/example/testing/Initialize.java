@@ -1,9 +1,12 @@
 package com.example.testing;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Initialize {
 
-    public Card[] generateDeck(){
-        Card[] deck = new Card[312];
+    public List<Card> generateDeck(){
+        List<Card> deck = new ArrayList<>();
         int colorCount = 1;
         String color = null, value, name = null, imagePath;
         for(int count = 0; count < 6; count++) {
@@ -29,12 +32,13 @@ public class Initialize {
                     value = String.valueOf((cardNumber / 4) + 1);
                     if ((cardNumber / 4) < 1) {
                         name = "Ace of " + color;
+                        value = "11";
                     } else {
                         name = value + " of " + color;
                     }
                 }
                 imagePath = "com/example/testing/Decks/Standard/" + name.replace(" ", "_").toLowerCase() + ".png";
-                deck[cardNumber + (count * 52)] = new Card(name, color, value, imagePath, "test2");
+                deck.add(new Card(name, color, value, imagePath, "test2"));
             }
         }
         return deck;

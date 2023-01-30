@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82668759-5dc8-4180-9ea4-9150c26d73e6" name="Changes" comment="init">
+    <list default="true" id="82668759-5dc8-4180-9ea4-9150c26d73e6" name="Changes" comment="changed Names">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/test.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/testing/Blackjack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/testing/Blackjack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/testing/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/testing/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/testing/Initialize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/testing/Initialize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/testing/game.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/game.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/testing/game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/game.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +26,37 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="testing" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="testing" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="testing" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -36,18 +77,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;S:/FH/Programieren/testing/src/main/resources/com/example/testing/Decks/Standard&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "extract.method.default.visibility": "private",
+    "last_opened_file_path": "S:/FH/Programieren/testing/src/main/resources/com/example/testing"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="S:\FH\Programieren\testing\src\main\resources\com\example\testing" />
       <recent name="S:\FH\Programieren\testing\src\main\resources\com\example\testing\Decks\Standard" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="S:\FH\Programieren\testing\src\main\resources\com\example\testing" />
     </key>
   </component>
@@ -78,6 +123,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testing [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="testing [jlink]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -101,8 +167,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Initialize" />
         <item itemvalue="Gradle.testing [jlink]" />
+        <item itemvalue="Gradle.testing [jar]" />
+        <item itemvalue="Application.Initialize" />
         <item itemvalue="Application.Blackjack" />
       </list>
     </recent_temporary>
@@ -117,6 +184,9 @@
       <updated>1674654036813</updated>
       <workItem from="1674654038442" duration="3132000" />
       <workItem from="1674765627327" duration="11518000" />
+      <workItem from="1674827636958" duration="634000" />
+      <workItem from="1674994968409" duration="28949000" />
+      <workItem from="1675029422926" duration="14240000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1674782395868</created>
@@ -125,7 +195,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674782395868</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="changed Names">
+      <created>1674827727252</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674827727252</updated>
+    </task>
+    <task id="LOCAL-00003" summary="changed Names">
+      <created>1674827862587</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674827862587</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,14 +228,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="changed Names" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed Names" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/testing/Initialize.java</url>
-          <line>16</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/testing/GameController.java</url>
+          <line>313</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

@@ -1,3 +1,9 @@
 .testPane{
-    -fx-background-color: #023020;
+    -fx-background-color: #063a26;
+}
+.playingField{
+    -fx-border-color: #063a26;
+    -fx-border-width: 3;
+    -fx-border-radius: 10;
+    -fx-background-color: #063a26;
 }
