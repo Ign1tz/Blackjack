@@ -105,13 +105,7 @@ public class GameController implements Initializable {
     public void clicked(ImageView test) {
         test.setOnMousePressed(event -> {
             if (event.isSecondaryButtonDown() && test.getImage() == image) {
-                Random rand = new Random();
-                int random = rand.nextInt(deck.size() - 1);
-                Card card = deck.get(random);
-                deck.remove(random);
-                Image cardFace = new Image(card.IMAGEPATH);
-                test.setImage(cardFace);
-                value.add(Integer.valueOf(card.VALUE));
+                value.add(Integer.valueOf(deffNewCard(test).VALUE));
                 calcValue();
                 if(value.contains(11)){
                     if(valueWhole > 21){
@@ -159,6 +153,17 @@ public class GameController implements Initializable {
             deckSize.setText(String.valueOf(deck.size()));
         });
     }
+
+    private Card deffNewCard(ImageView test) {
+        Random rand = new Random();
+        int random = rand.nextInt(deck.size() - 1);
+        Card card = deck.get(random);
+        deck.remove(random);
+        Image cardFace = new Image(card.IMAGEPATH);
+        test.setImage(cardFace);
+        return card;
+    }
+
     private void lost() throws IOException {
         points.setText("You lost");
         yourMoney -= bet;
@@ -243,7 +248,7 @@ public class GameController implements Initializable {
             betButton.setDisable(false);
             pickMoney.setValue(25);
             pickMoney.setDisable(false);
-            writeMoney.setDisable(true);
+            writeMoney.setDisable(false);
         }
     }
     private void updateMoney() throws IOException {
@@ -260,12 +265,7 @@ public class GameController implements Initializable {
         System.out.println(test.getX());
         test.setOpacity(1);
         TranslateTransition translate = new TranslateTransition();
-        Random rand = new Random();
-        int random = rand.nextInt(deck.size() - 1);
-        Card card = deck.get(random);
-        deck.remove(random);
-        Image cardFace = new Image(card.IMAGEPATH);
-        test.setImage(cardFace);
+        Card card = deffNewCard(test);
         translate.setNode(test);
         translate.setFromX(stack.getLayoutX() - test.getLayoutX());
         translate.setFromY(stack.getLayoutY() - test.getLayoutY());
@@ -295,13 +295,7 @@ public class GameController implements Initializable {
         if(checkIfAllCardsFlipped() && alive && count > 1){
             alive = false;
             stack.setDisable(true);
-            Random rand = new Random();
-            int random = rand.nextInt(deck.size() - 1);
-            Card card = deck.get(random);
-            deck.remove(random);
-            Image cardFace = new Image(card.IMAGEPATH);
-            temp.setImage(cardFace);
-            aceCheck(card);
+            aceCheck(deffNewCard(temp));
             dealerPoints.setText("Dealers Points: " + dealerValueWhole);
             dealerPlaying.add(test);
             dealerPlaying.add(temp);

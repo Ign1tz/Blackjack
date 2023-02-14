@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82668759-5dc8-4180-9ea4-9150c26d73e6" name="Changes" comment="working">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/testing/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/testing/CreateAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/testing/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/testing/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/testing/Vars.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Home.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Register.fxml" afterDir="false" />
+    <list default="true" id="82668759-5dc8-4180-9ea4-9150c26d73e6" name="Changes" comment="half done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/testing/Blackjack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/testing/Blackjack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/testing/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/testing/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/testing/game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/game.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/testing/Game/Accounts.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/testing/Game/Accounts.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,6 +201,7 @@
       <workItem from="1675097855082" duration="930000" />
       <workItem from="1675705434026" duration="1251000" />
       <workItem from="1675780464597" duration="1299000" />
+      <workItem from="1676399058683" duration="980000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1674782395868</created>
@@ -241,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675044720620</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="half done">
+      <created>1676399087901</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676399087901</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +259,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="changed Names" />
     <MESSAGE value="working" />
-    <option name="LAST_COMMIT_MESSAGE" value="working" />
+    <MESSAGE value="half done" />
+    <option name="LAST_COMMIT_MESSAGE" value="half done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
