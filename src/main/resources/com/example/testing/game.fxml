@@ -36,7 +36,7 @@
          <GridPane.margin>
             <Insets left="100.0" />
          </GridPane.margin></Label>
-      <Slider fx:id="pickMoney" majorTickUnit="100.0" max="1000.0" maxWidth="-Infinity" minorTickCount="10" prefWidth="200.0" showTickMarks="true" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+      <Slider fx:id="pickMoney" majorTickUnit="100.0" max="0.0" maxWidth="-Infinity" minorTickCount="0" prefWidth="200.0" showTickMarks="true" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
          <GridPane.margin>
             <Insets left="100.0" top="40.0" />
          </GridPane.margin>

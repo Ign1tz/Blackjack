@@ -16,6 +16,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.util.Duration;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.*;
 
@@ -36,16 +37,12 @@ public class GameController implements Initializable {
     TextField writeMoney;
     @FXML
     GridPane grid;
-    private double startDragX;
-    private double startDragY;
-    private boolean first = true;
+    private double startDragX, startDragY, bet;
+    private boolean first = true, alive = true;
     Initialize init = new Initialize();
-    private final List<Card> deck = init.generateDeck();
+    private List<Card> deck = init.generateDeck();
     private final List<Boolean> wasFlipped = new ArrayList<>();
-    private int count = 0, countDealer = 0, valueWhole, dealerValueWhole, moveCard = 85;
-    private int yourMoney = 1000;
-    private double bet;
-    private boolean alive = true;
+    private int count = 0, countDealer = 0, valueWhole, dealerValueWhole, moveCard = 85, yourMoney = (int) Vars.money;
 
     private void calcValue() {
         valueWhole = 0;
@@ -129,15 +126,31 @@ public class GameController implements Initializable {
                     if(count == 2){
                         points.setText("Blackjack");
                         yourMoney += bet * 2;
+                        money.setText("You have: " + yourMoney);
                         stack.setDisable(true);
+                        try {
+                            updateMoney();
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
                     }else {
                         points.setText("Blackjack");
                         yourMoney += bet;
+                        money.setText("You have: " + yourMoney);
                         stack.setDisable(true);
+                        try {
+                            updateMoney();
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
                     }
                 }
                 else {
-                    lost();
+                    try {
+                        lost();
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
                 }
             }else if(event.isSecondaryButtonDown()){
                 test.toFront();
@@ -146,12 +159,13 @@ public class GameController implements Initializable {
             deckSize.setText(String.valueOf(deck.size()));
         });
     }
-    private void lost(){
+    private void lost() throws IOException {
         points.setText("You lost");
         yourMoney -= bet;
         stack.setDisable(true);
         alive = false;
         money.setText("You have: " + yourMoney);
+        updateMoney();
     }
     private void drag(ImageView test) {
         test.setOnMouseDragged(event -> {
@@ -189,7 +203,7 @@ public class GameController implements Initializable {
         yourBet.setText("Your bet: " + (int) bet);
         startGame();
     }
-    public void startNewRound(){
+    public void startNewRound() throws IOException {
         pickMoney.setDisable(false);
         betButton.setDisable(false);
         writeMoney.setDisable(false);
@@ -215,6 +229,27 @@ public class GameController implements Initializable {
         alive = true;
         pickMoney.setMax(yourMoney);
         moveCard = 85;
+        if(deck.size() < 70){
+            deck = init.generateDeck();
+        }
+        yourBet.setText("Your bet: ");
+        if(yourMoney < 10){
+            betButton.setDisable(true);
+            pickMoney.setValue(0);
+            pickMoney.setDisable(true);
+            writeMoney.setDisable(true);
+            writeMoney.setText(String.valueOf(0));
+        }else{
+            betButton.setDisable(false);
+            pickMoney.setValue(25);
+            pickMoney.setDisable(false);
+            writeMoney.setDisable(true);
+        }
+    }
+    private void updateMoney() throws IOException {
+        CreateAccount ca = new CreateAccount();
+        Vars.money = yourMoney;
+        ca.changeMoney();
     }
 
     private void startGame(){
@@ -256,7 +291,7 @@ public class GameController implements Initializable {
         translate.setDuration(Duration.millis(500));
         translate.play();
     }
-    public void stay(){
+    public void stay() throws IOException {
         if(checkIfAllCardsFlipped() && alive && count > 1){
             alive = false;
             stack.setDisable(true);
@@ -275,7 +310,7 @@ public class GameController implements Initializable {
             checkIfWon();
         }
     }
-    private void checkIfWon(){
+    private void checkIfWon() throws IOException {
         TranslateTransition translate = new TranslateTransition();
         dealerPoints.setText("Dealers Points: " + dealerValueWhole);
         if(dealerValueWhole < 22){
@@ -288,12 +323,14 @@ public class GameController implements Initializable {
             }else if(valueWhole >= dealerValueWhole){
                 yourMoney += bet;
                 money.setText("You have: " + yourMoney);
+                updateMoney();
             }else if(valueWhole < dealerValueWhole){
                 lost();
             }
         }else{
             yourMoney += bet;
             money.setText("You have: " + yourMoney);
+            updateMoney();
         }
     }
 
@@ -333,7 +370,13 @@ public class GameController implements Initializable {
         dealerPlaying.get(countDealer).setX(100);
         countDealer++;
         aceCheck(card);
-        translate.setOnFinished(event -> checkIfWon());
+        translate.setOnFinished(event -> {
+            try {
+                checkIfWon();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
 
     private void aceCheck(Card card) {
@@ -354,9 +397,22 @@ public class GameController implements Initializable {
         money.setText("You have: " + yourMoney);
         pickMoney.setMax(yourMoney);
         pickMoney.setMin(5);
-        pickMoney.setValue(25);
         writeMoney.setText(String.valueOf((int) pickMoney.getValue()));
         pickMoney.setValue(Double.parseDouble(writeMoney.getText()));
+        if(yourMoney < 10){
+            betButton.setDisable(true);
+            pickMoney.setValue(0);
+            pickMoney.setDisable(true);
+            writeMoney.setDisable(true);
+            writeMoney.setText(String.valueOf(0));
+        }else{
+            betButton.setDisable(false);
+            pickMoney.setValue(25);
+            pickMoney.setDisable(false);
+            writeMoney.setDisable(false);
+            int temp = (int) Math.ceil(yourMoney/4);
+            pickMoney.setMajorTickUnit(temp);
+        }
         pickMoney.valueProperty().addListener(new ChangeListener<Number>() {
             @Override
             public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
